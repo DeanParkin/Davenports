@@ -1,0 +1,148 @@
+body {
+  font-family: "helvetica", Arial, sans-serif;
+}
+
+.parallaxPlate {
+  background-color: #fff;
+}
+
+nav#navbarSite {
+  background-image: linear-gradient(15deg, #e81f27 0%, #F44850 100%);
+  min-height: 95px;
+  box-shadow: -1px 0px 15px 5px #222;
+}
+
+div#myToggleNav {
+  margin-left: 20px;
+}
+
+.navbar-text {
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  width: 230px;
+}
+
+a.nav-link {
+  font-size: 20px;
+  color: #fff;
+}
+a.nav-link:hover {
+  color: #000;
+  -webkit-transition: color 500ms ease;
+  -moz-transition: color 500ms ease;
+  -ms-transition: color 500ms ease;
+  -o-transition: color 500ms ease;
+  transition: color 500ms ease;
+}
+
+.nav-icon {
+  margin: 1em;
+  width: 40px;
+}
+
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+  background-color: #fff;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.x.nav-icon:before {
+  background-color: #000;
+  -webkit-transform: translateY(12px) rotate(135deg);
+  -moz-transform: translateY(12px) rotate(135deg);
+  -ms-transform: translateY(12px) rotate(135deg);
+  -o-transform: translateY(12px) rotate(135deg);
+  transform: translateY(12px) rotate(135deg);
+}
+
+.x.nav-icon:after {
+  background-color: #000;
+  -webkit-transform: translateY(-12px) rotate(-135deg);
+  -moz-transform: translateY(-12px) rotate(-135deg);
+  -ms-transform: translateY(-12px) rotate(-135deg);
+  -o-transform: translateY(-12px) rotate(-135deg);
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.x.nav-icon div {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+div#featured {
+  margin-top: 95px;
+}
+
+#featured.carousel.carousel-fade .carousel-item {
+  display: block;
+  position: fixed;
+  opacity: 0;
+  transition: opacity ease-out 0.7s;
+  z-index: -1;
+  margin-top: 95px;
+}
+
+#featured.carousel.carousel-fade .carousel-item.active {
+  opacity: 1 !important;
+}
+
+.welcomeMessage {
+  padding-top: 50px;
+  background-color: #fff;
+  z-index: 120;
+}
+.welcomeMessage h2 {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#beerSection {
+  padding-top: 100px;
+}
+
+a.btn {
+  background-color: #e81f27;
+  color: #fff;
+}
+
+#featuredbars.carousel.slide .carousel-item {
+  z-index: 4;
+}
+
+footer {
+  background-color: #333;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 410px) {
+  .navbar-brand img {
+    width: 190px;
+  }
+
+  .nav-icon {
+    margin: 1em 0.1em;
+    width: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
